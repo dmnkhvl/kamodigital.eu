@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../img/kamo_textLogo.svg";
+import logo from "../../public/kamo_textLogo.svg";
 import Button from "./Button.jsx";
 
 const Navbar = () => {
@@ -125,9 +125,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <Button
-
-      />
+      <Button />
     </nav>
   );
 };
