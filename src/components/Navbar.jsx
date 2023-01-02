@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../img/kamo_textLogo.svg";
+import Button from "./Button.jsx";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -9,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full fixed top-2 px-4 xl:px-0">
+    <nav className="w-full fixed top-1 px-4 xl:px-0">
       <div className="max-w-screen-xl rounded-full m-4 bg-kamo-black-alt backdrop-saturate-150 backdrop-blur-xl shadow-lg z-10 mx-auto ">
-        <div className="flex items-center mx-auto py-7 px-8">
+        <div className="flex items-center mx-auto py-4 sm:py-6 md:py-7 px-8">
           <a href="#" className="hover:opacity-90">
             <img className="h-[25px]" src={logo} alt="kamodigital_logo" />
           </a>
@@ -87,11 +88,11 @@ const Navbar = () => {
       <ul
         className={`menuNav ${
           navbarOpen
-            ? "flex md:hidden items-center flex-col max-w-screen-xl  mx-auto mb-6 px-6"
+            ? "flex md:hidden bg-kamo-black-alt rounded-3xl items-center flex-col max-w-screen-xl  mx-auto mb-6 px-6"
             : "hidden"
         }`}
       >
-        <li className="w-full py-4 border-b border-kamo-gray md:w-auto md:p-0 md:ml-5">
+        <li className="w-full py-4 md:w-auto md:p-0 md:ml-5">
           <a
             className="transition-colors duration-200 hover:text-kamo-green"
             href=""
@@ -99,7 +100,7 @@ const Navbar = () => {
             o nás.
           </a>
         </li>
-        <li className="w-full py-4 border-b md:border-none border-kamo-gray md:w-auto md:p-0 md:ml-5">
+        <li className="w-full py-4  md:w-auto md:p-0 md:ml-5">
           <a
             className="transition-colors duration-200 hover:text-kamo-green"
             href=""
@@ -107,7 +108,7 @@ const Navbar = () => {
             služby.
           </a>
         </li>
-        <li className="w-full py-4 border-b md:border-none border-kamo-gray md:w-auto md:p-0 md:ml-5">
+        <li className="w-full py-4  md:w-auto md:p-0 md:ml-5">
           <a
             className="transition-colors duration-200 hover:text-kamo-green"
             href=""
@@ -115,7 +116,7 @@ const Navbar = () => {
             portfólio.
           </a>
         </li>
-        <li className="w-full py-4 border-b md:border-none border-kamo-gray md:w-auto md:p-0 md:ml-5">
+        <li className="w-full py-4  md:w-auto md:p-0 md:ml-5">
           <a
             className="transition-colors duration-200 hover:text-kamo-green"
             href=""
@@ -124,6 +125,9 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <Button
+
+      />
     </nav>
   );
 };

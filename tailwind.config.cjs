@@ -16,6 +16,8 @@ module.exports = {
         "kamo-green": "#2fea64",
         "kamo-green-alt": "#08f24a",
         "kamo-green-dark": "#3D8734",
+        "kamo-button": "#2fea64",
+        "kamo-button-alt": "#50FF82",
       },
     },
   },
