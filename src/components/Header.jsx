@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-kamo-gray-alt via-kamo-black-alt to-kamo-black ">
+    <div className="w-full bg-gradient-to-b from-kamo-button-alt via-black to-kamo-black">
       <div className="flex items-center justify-center max-w-screen-lg h-[28rem] md:h-[35rem] mx-auto mt-10 md:mt-20">
         <div className="py-5 px-8 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 md:mb-6 ">
